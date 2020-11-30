@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- <h1>Người dùng nhập vào User</h1>
+    <form id="info" action="">
+        <input type="text" name= "username" placeholder="Người dùng nhập vào username">
+        <input type="text" name= "password" placeholder="Người dùng nhập vào password">
+        <input type="text" name= "password" placeholder="Người dùng nhập vào confirm-password">
+    </form> -->
+
+    <head>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossOrigin="anonymous" />
+    </head>
+
+    <div class="signup">
+        <img src="https://imgur.com/aILP3CD.png" alt="" class="signup-image">
+        <div class="signup-container">
+            <div class="tab">
+                <div class="tab-item is-active">Sign up</div>
+                <div class="tab-item">Sign in</div>
+            </div>
+            <h1 class="signup-heading">Sign up</h1>
+
+
+            <!-- code form -->
+            <form class="signup-form" autocomplete="off">
+                <div class="form-group">
+                    <label for="name" class="form-label">Full name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Ex: John Doe" required name="name">
+                    <p class="error name">this name is error!!!!</p>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="Ex: johndoe@email.com" required
+                        name="email">
+                    <p class="error email">this email is is missing</p>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" class="form-input" placeholder="************" required
+                        name="password">
+                    <p class="error password">this email is is missing</p>
+                </div>
+                <div class="form-group">
+                    <label for="re-password" class="form-label">Repeat password</label>
+                    <input type="password" id="re-password" class="form-input" placeholder="************" required
+                        name="re_password">
+                    <p class="error confirm-password">this email is is missing</p>
+                </div>
+                <div class="form-group signup-term">
+                    By clicking you agree with our <a href="#" class="signup-term-link">Term of use.</a>
+                </div>
+                <button type="submit" class="btn btn--gradient">Sign up</button>
+            </form>
+            <!-- end of code form -->
+
+
+        </div>
+    </div>
+    <script src="./controller.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
